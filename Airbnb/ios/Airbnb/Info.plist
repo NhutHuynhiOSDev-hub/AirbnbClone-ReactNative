@@ -53,10 +53,7 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>AntDesign.ttf</string>
-		<string>Entypo.ttf</string>
 		<string>FontAwesome.ttf</string>
-		<string>Fontisto.ttf</string>
 	</array>
 </dict>
 </plist>
