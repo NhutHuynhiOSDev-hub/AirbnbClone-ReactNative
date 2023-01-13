@@ -9,7 +9,7 @@ function HomeScreen() {
       <Pressable
         style={styles.searchBtn}
         onPress={() => console.log('Search Btn On Press')}>
-        <FontAwesome name="search" size={25} color="#f15454" />
+        <FontAwesome name="search" size={18} color="#f15454" />
         <Text style={styles.searchBtnText}>Where are you going</Text>
       </Pressable>
       <ImageBackground
