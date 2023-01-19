@@ -8,7 +8,7 @@ const Post = props => {
       <Image
         style={styles.image}
         source={{
-          uri: 'https://media.travel.com.vn/destination/tf_220726033156_024216.jpg',
+          uri: post.image,
         }}
       />
       <Text style={styles.bedrooms}>
