@@ -8,16 +8,16 @@
 
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
-import DestinationsSearchScreen from './src/screens/DestinationsSearch';
 import HomeScreen from './src/screens/Home';
 import SearchResultsScreen from './src/screens/SearchResults';
+import GuestsScreen from './src/screens/Guests/Index';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle={'dark-content'} />
       <SafeAreaView>
-        <DestinationsSearchScreen />
+        <GuestsScreen />
       </SafeAreaView>
     </>
   );
