@@ -2,13 +2,16 @@ import React from 'react';
 import {View, Text, ImageBackground, Pressable} from 'react-native';
 import styles from './style';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {useNavigation} from '@react-navigation/native';
 
 function HomeScreen() {
+  const navigation = useNavigation();
+
   return (
     <View>
       <Pressable
         style={styles.searchBtn}
-        onPress={() => console.log('Search Btn On Press')}>
+        onPress={() => navigation.navigate('Destinations Search')}>
         <FontAwesome name="search" size={18} color="#f15454" />
         <Text style={styles.searchBtnText}>Where are you going</Text>
       </Pressable>

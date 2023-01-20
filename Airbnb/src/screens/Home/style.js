@@ -31,9 +31,10 @@ const styles = StyleSheet.create({
   },
 
   searchBtn: {
-    height: 40,
+    height: 50,
     width: Dimensions.get('screen').width - 20,
     backgroundColor: '#ffff',
+    marginTop: 44,
     marginHorizontal: 10,
     borderRadius: 30,
     flexDirection: 'row',

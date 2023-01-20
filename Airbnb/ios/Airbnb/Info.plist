@@ -20,6 +20,8 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -55,6 +57,9 @@
 	<array>
 		<string>FontAwesome.ttf</string>
 		<string>Entypo.ttf</string>
+		<string>Fontisto.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>Feather.ttf</string>
 	</array>
 </dict>
 </plist>

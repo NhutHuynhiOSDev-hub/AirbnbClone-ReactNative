@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 15,
     borderBottomWidth: 1,
-    borderBottomColor: 'ligthgrey',
+    borderBottomColor: 'lightgrey',
   },
   iconContainer: {
     backgroundColor: '#d4d4d4',
