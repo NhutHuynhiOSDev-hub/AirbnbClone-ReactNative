@@ -11,7 +11,7 @@ function HomeScreen() {
     <View>
       <Pressable
         style={styles.searchBtn}
-        onPress={() => navigation.navigate('Destinations Search')}>
+        onPress={() => navigation.navigate('Destination Search')}>
         <FontAwesome name="search" size={18} color="#f15454" />
         <Text style={styles.searchBtnText}>Where are you going</Text>
       </Pressable>

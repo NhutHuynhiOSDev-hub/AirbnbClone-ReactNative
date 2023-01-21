@@ -82,7 +82,7 @@ function GuestsScreen() {
           navigation.navigate('Home', {
             screen: 'Explore',
             params: {
-              screen: 'Search Reults',
+              screen: 'SearchResults',
             },
           });
         }}

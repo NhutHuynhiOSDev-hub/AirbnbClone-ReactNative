@@ -9,15 +9,11 @@ const Tab = createBottomTabNavigator();
 const HomeTabNavigator = props => {
   return (
     <Tab.Navigator
-      initialRouteName="Explore"
-      screenOptions={{
-        tabBarActiveTintColor: '#f15454',
-      }}>
+      screenOptions={{headerShown: false, activeTintColor: '#f15454'}}>
       <Tab.Screen
         name="Explore"
         component={ExploreNavigator}
         options={{
-          headerShown: false,
           tabBarIcon: ({color}) => (
             <Feather name="search" size={25} color={color} />
           ),
@@ -27,7 +23,6 @@ const HomeTabNavigator = props => {
         name="Saved"
         component={HomeScreen}
         options={{
-          headerShown: false,
           tabBarIcon: ({color}) => (
             <Feather name="heart" size={25} color={color} />
           ),
@@ -37,7 +32,6 @@ const HomeTabNavigator = props => {
         name="Airbnb"
         component={HomeScreen}
         options={{
-          headerShown: false,
           tabBarIcon: ({color}) => (
             <FontAwesome5Pro name="airbnb" size={25} color={color} />
           ),
@@ -47,7 +41,6 @@ const HomeTabNavigator = props => {
         name="Message"
         component={HomeScreen}
         options={{
-          headerShown: false,
           tabBarIcon: ({color}) => (
             <Feather name="message-square" size={25} color={color} />
           ),
@@ -57,7 +50,6 @@ const HomeTabNavigator = props => {
         name="Profile"
         component={HomeScreen}
         options={{
-          headerShown: false,
           tabBarIcon: ({color}) => (
             <Feather name="user" size={25} color={color} />
           ),
