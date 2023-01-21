@@ -79,7 +79,12 @@ function GuestsScreen() {
 
       <Pressable
         onPress={() => {
-          navigation.popToTop();
+          navigation.navigate('Home', {
+            screen: 'Explore',
+            params: {
+              screen: 'Search Reults',
+            },
+          });
         }}
         style={styles.searchBtn}>
         <Text style={styles.searchText}>Search</Text>

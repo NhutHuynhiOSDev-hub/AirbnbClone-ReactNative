@@ -2,6 +2,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5Pro from 'react-native-vector-icons/FontAwesome5Pro';
+import ExploreNavigator from './ExploreNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +15,7 @@ const HomeTabNavigator = props => {
       }}>
       <Tab.Screen
         name="Explore"
-        component={HomeScreen}
+        component={ExploreNavigator}
         options={{
           headerShown: false,
           tabBarIcon: ({color}) => (
