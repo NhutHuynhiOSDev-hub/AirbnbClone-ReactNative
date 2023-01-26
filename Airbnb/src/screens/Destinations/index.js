@@ -5,11 +5,14 @@ import Entypo from 'react-native-vector-icons/Entypo';
 
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
+import Config from 'react-native-config';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 
 function DestinationsSearchScreen() {
   const navigation = useNavigation();
   const [inputText, setInputText] = useState('');
+
+  console.log('API KEY HERE: ', Config.GOOGLE_PLACE_API_KEY);
 
   return (
     <View style={styles.container}>
@@ -20,7 +23,7 @@ function DestinationsSearchScreen() {
           console.log(data, details);
         }}
         query={{
-          key: 'YOUR API KEY',
+          key: '',
           language: 'en',
         }}
       />
