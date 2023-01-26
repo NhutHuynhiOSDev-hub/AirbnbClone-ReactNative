@@ -1,4 +1,4 @@
-package com.airbnb.newarchitecture;
+package com.NhutHuynh.Airbnb.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;

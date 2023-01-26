@@ -1,4 +1,4 @@
-package com.airbnb;
+package com.NhutHuynh.Airbnb;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

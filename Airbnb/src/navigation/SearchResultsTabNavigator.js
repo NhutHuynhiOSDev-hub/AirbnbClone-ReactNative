@@ -13,7 +13,6 @@ const SearchResultsTabNavigator = props => {
         },
       }}>
       <Tab.Screen name="List" component={SearchResults} />
-
       <Tab.Screen name="Map" component={SearchResults} />
     </Tab.Navigator>
   );

@@ -11,9 +11,6 @@ import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
 function DestinationsSearchScreen() {
   const navigation = useNavigation();
   const [inputText, setInputText] = useState('');
-
-  console.log('API KEY HERE: ', Config.GOOGLE_PLACE_API_KEY);
-
   return (
     <View style={styles.container}>
       <GooglePlacesAutocomplete
@@ -23,7 +20,7 @@ function DestinationsSearchScreen() {
           console.log(data, details);
         }}
         query={{
-          key: '',
+          key: Config.GOOGLE_PLACE_API_KEY,
           language: 'en',
         }}
       />

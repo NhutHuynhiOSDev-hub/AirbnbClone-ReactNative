@@ -1,4 +1,4 @@
-package com.airbnb.newarchitecture.modules;
+package com.NhutHuynh.Airbnb.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
