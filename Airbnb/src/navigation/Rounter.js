@@ -4,15 +4,13 @@ import DestinationsSearchScreen from '../screens/Destinations';
 import GuestsScreen from '../screens/Guests/Index';
 import PostScreen from '../screens/Posts/Index';
 import HomeTabNavigator from './HomeTabNavigator';
-import SearchResultsTabNavigator from './SearchResultsTabNavigator';
 
 const Stack = createNativeStackNavigator();
 
 const Router = props => {
   return (
     <NavigationContainer>
-      <SearchResultsTabNavigator />
-      {/* <Stack.Navigator>
+      <Stack.Navigator>
         <Stack.Screen
           name={'Home'}
           component={HomeTabNavigator}
@@ -44,7 +42,7 @@ const Router = props => {
             title: 'Accommodation',
           }}
         />
-      </Stack.Navigator> */}
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

@@ -5,6 +5,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 
 function DestinationsSearchScreen() {
   const navigation = useNavigation();
@@ -12,6 +13,17 @@ function DestinationsSearchScreen() {
 
   return (
     <View style={styles.container}>
+      <GooglePlacesAutocomplete
+        placeholder="Search"
+        onPress={(data, details = null) => {
+          // 'details' is provided when fetchDetails = true
+          console.log(data, details);
+        }}
+        query={{
+          key: 'YOUR API KEY',
+          language: 'en',
+        }}
+      />
       <TextInput
         style={styles.textInput}
         placeholder="Where are you going"
