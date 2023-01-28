@@ -8,3 +8,7 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+-keep class com.facebook.jni.** { *; }
+-keep class com.airbnb.BuildConfig { *; }
+-keep class com.facebook.hermes.unicode.** { *; }
+-keep class com.facebook.imagepipeline.image.EncodedImage { *; }
