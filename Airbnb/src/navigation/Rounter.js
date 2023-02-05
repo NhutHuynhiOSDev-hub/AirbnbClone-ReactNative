@@ -20,7 +20,7 @@ const Router = props => {
         />
 
         <Stack.Screen
-          name={'Destination Search'}
+          name={'DestinationSearch'}
           component={DestinationsSearchScreen}
           options={{
             title: 'Search your destination',

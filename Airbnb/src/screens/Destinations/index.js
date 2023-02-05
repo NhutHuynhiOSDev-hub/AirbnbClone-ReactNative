@@ -23,7 +23,7 @@ function DestinationsSearchScreen() {
         query={{
           key: Config.GOOGLE_API_KEY,
           language: 'en',
-          type: '(cities)',
+          type: '(cities)',r
         }}
         renderRow={item => <SuggestionRow item={item} />}
       />

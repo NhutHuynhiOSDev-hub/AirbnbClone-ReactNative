@@ -1,4 +1,6 @@
 import MapView, {Marker} from 'react-native-maps';
+import places from '../../../assets/data/feed';
+import CustomMarker from '../../components/CustomMarker';
 import styles from './styles';
 
 const {View, Text} = require('react-native');
@@ -14,15 +16,14 @@ const SearchResultMaps = props => {
           latitudeDelta: 0.01,
           longitudeDelta: 0.01,
         }}>
-        <Marker
-          coordinate={{
-            latitude: 10.796897374650548,
-            longitude: 106.69086520199261,
-          }}>
-          <View style={styles.markerContainer}>
-            <Text style={styles.priceTitle}>$300</Text>
-          </View>
-        </Marker>
+        <CustomMarker />
+        {places.map(place => (
+          <CustomMarker
+            key={place.id}
+            coordinate={place.coordinate}
+            price={place.newPrice}
+          />
+        ))}
       </MapView>
     </View>
   );
